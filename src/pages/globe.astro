@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DemoOne from '../components/ui/demo';
+---
+
+<BaseLayout title="Globe">
+	<div class="wrapper">
+		<!-- client:only because the globe needs window/canvas -->
+		<DemoOne client:only="react" />
+	</div>
+</BaseLayout>
